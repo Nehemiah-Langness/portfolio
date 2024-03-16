@@ -7,8 +7,8 @@ export function Loading({ children }: PropsWithChildren<object>) {
 
     return <>
         {children}
-        {!loaded && <div className="position-fixed start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center bg-light">
-            <Branding width='50vw' onAnimationEnd={e => {
+        {!loaded && <div id="branding-container" className="position-fixed start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center bg-light">
+            <Branding onAnimationEnd={e => {
                 if (e.animationName === 'center') {
                     setLoaded(true);
                 }

@@ -1,20 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg id="branding" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 -192 768 384" style="enable-background:new 0 -192 768 192;" xml:space="preserve">
 	<style type="text/css">
 		.branding-st2{fill:#2272AF;}
 
+		#branding-container {
+			animation: container-fade 4s ease-in-out forwards;
+			
+		}
+
+		#branding {
+			animation: sizing 4s ease-in-out forwards;
+		}
+
+		@keyframes sizing {
+			0% {
+				width: 50rem;
+				transform: translate(0, 0);
+			}
+
+			75% {
+				width: 50rem;
+				transform: translate(0, 0);
+			}
+
+			90% {
+				width: 12rem;
+				transform: translate(calc(-50vw + (.375 * 7rem)), calc(-50vh + (.375 * 8rem)));
+			}
+
+			100% {
+				width: 12rem;
+				transform: translate(calc(-50vw + (.375 * 7rem)), calc(-50vh + (.375 * 8rem)));
+			}
+		}
+
 		#brandingSVGID_1_, #SVGID_00000147213311073233406890000008687734854817778870_ {
-			animation: clip 3s ease-in-out forwards;
+			animation: clip 2s ease-in-out forwards;
 		}
 
 		#NEHEMIAH {
-			animation: name-collapse 3s ease-in-out forwards;
+			animation: name-collapse 2s ease-in-out forwards;
 		}
 
 		#FullName {
-			animation: center 6s ease-in-out forwards;
+			animation: center 4s ease-in-out forwards;
+		}
+
+		@keyframes container-fade {
+			0% {
+				opacity: 1;
+			}
+
+			90% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
 		}
 
 		@keyframes center {
@@ -23,12 +68,12 @@
 				opacity: 1;
 			}
 
-			50% {
-				transform: translate(0, 0);
+			25% {
+				transform: translate(37.5%, 0);
 				opacity: 1;
 			}
 
-			75% {
+			50% {
 				transform: translate(37.5%, -37.5%);
 				opacity: 1;
 			}
@@ -60,14 +105,13 @@
 
 		@keyframes name-collapse {
 			0% { 
-				transform: translate(-5%, -40%)
-			}
-			50% { 
-				transform: translate(-5%, -40%)
-			}
-			75% { 
 				transform: translate(5%, -40%)
 			}
+
+			50% { 
+				transform: translate(5%, -40%)
+			}
+
 			100% { 
 				transform: translate(0, 0)
 			}
