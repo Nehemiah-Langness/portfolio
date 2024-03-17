@@ -2,138 +2,19 @@
 <!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg id="branding" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 -192 768 384" style="enable-background:new 0 -192 768 192;" xml:space="preserve">
-	<style type="text/css">
-		:root {
-			--branding-delay: 1;
-		}
-
-		.branding-st2{fill:#2272AF;}
-
-		#branding-container {
-			background: var(--bs-light);
-			animation: container-fade 4s ease-in-out forwards;
-			animation-delay: var(--branding-delay);
-		}
-
-		#branding {
-			width: 75vh;
-			transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-			animation: sizing 4s ease-in-out forwards;
-			animation-delay: var(--branding-delay);
-		}
-
-		#brandingSVGID_1_, #SVGID_00000147213311073233406890000008687734854817778870_ {
-			animation: clip 2s ease-in-out forwards;
-			animation-delay: var(--branding-delay);
-		}
-
-		#NEHEMIAH {
-			transform: translate(5%, -40%);
-			animation: name-collapse 2s ease-in-out forwards;
-			animation-delay: var(--branding-delay);
-		}
-
-		#FullName {
-			animation: center 4s ease-in-out forwards;
-			animation-delay: var(--branding-delay);
-		}
-
-		@keyframes container-fade {
-			0% {
-				opacity: 1;
-			}
-
-			60% {
-				opacity: 1;
-			}
-
-			80% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 0;
-			}
-		}
-
-		@keyframes sizing {
-			0% {
-				width: 75vh;
-			transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-			}
-
-			50% {
-				width: 75vh;
-				transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-			}
-
-			75% {
-				width: 12rem;
-				transform: translate(-25%, 0);
-			}
-
-			100% {
-				width: 12rem;
-				transform: translate(-25%, 0);
-			}
-		}
-
-		@keyframes center {
-			0% {
-				transform: translate(0, 0);
-			}
-
-			25% {
-				transform: translate(37.5%, 0);
-			}
-
-			50% {
-				transform: translate(37.5%, -37.5%);
-			}
-
-			100% {
-				transform: translate(37.5%, -37.5%);
-			}
-		}
-
-		@keyframes clip {
-			0% {
-				transform: scale(1, 1);
-			}
-
-			50% {
-				transform: scale(0, 1);
-			}
-
-			100% {
-				transform: scale(0, 1);
-			}
-		}
-
-		@keyframes name-collapse {
-			0% { 
-				transform: translate(5%, -40%)
-			}
-
-			50% { 
-				transform: translate(5%, -40%)
-			}
-
-			100% { 
-				transform: translate(0, 0)
-			}
-		}
-	</style>
+	 <style>
+	 	.branding-st2{fill:#2272AF;}
+	 </style>
 <g id="FullName">
 	<g id="LANGNESS">
-		<g id="ANGNESSS-CLIPPED">
+		<g id="ANGNESS-CLIPPED">
 			<defs>
-				<rect id="brandingSVGID_1_" style="" width="768" height="384"/>
+				<rect id="ANGNESS-MASK" style="" width="768" height="384"/>
 			</defs>
-			<clipPath id="SVGID_00000150075735443541078580000012726306125795894400_">
-				<use xlink:href="#brandingSVGID_1_"  style="overflow:visible;"/>
+			<clipPath id="ANGNESS-MASK_PATH">
+				<use xlink:href="#ANGNESS-MASK"  style="overflow:visible;"/>
 			</clipPath>
-			<g id="ANGNESS" style="clip-path:url(#SVGID_00000150075735443541078580000012726306125795894400_);">
+			<g id="ANGNESS" style="clip-path:url(#ANGNESS-MASK_PATH);">
 				<path class="branding-st2" d="M140.7,144.3l-15,25.8c-0.4,0.7-1.2,1.2-2,1.2H109c-1.8,0-2.9-2-2-3.5l48.9-82.9c1.6-2.8,4.6-4.5,7.9-4.5
 					h14.8c1.2,0,2.2,0.9,2.3,2.1l7.2,78.9c0.5,5.4-3.7,10-9.1,10h-0.4c-1.2,0-2.2-0.9-2.3-2.1l-2.1-23.6c-0.1-1.7-1.5-2.9-3.2-2.9
 					h-27.5C142.3,142.7,141.2,143.3,140.7,144.3z M170.2,133.5c1.9,0,3.4-1.6,3.2-3.5l-2.1-22.7c-0.1-1.3-0.2-2.9-0.3-4.6
@@ -174,12 +55,12 @@
 	<g id="NEHEMIAH">
 		<g id="EHEMIAH-CLIPPED">
 			<defs>
-				<rect id="SVGID_00000147213311073233406890000008687734854817778870_" width="768" height="384"/>
+				<rect id="EHEMIAH-MASK" width="768" height="384"/>
 			</defs>
-			<clipPath id="SVGID_00000158714891833796426000000007114936522800147619_">
-				<use xlink:href="#SVGID_00000147213311073233406890000008687734854817778870_"  style="overflow:visible;"/>
+			<clipPath id="EHEMIAH-MASK_CLIP">
+				<use xlink:href="#EHEMIAH-MASK"  style="overflow:visible;"/>
 			</clipPath>
-			<g id="EHEMIAH" style="clip-path:url(#SVGID_00000158714891833796426000000007114936522800147619_);">
+			<g id="EHEMIAH" style="clip-path:url(#EHEMIAH-MASK_CLIP);">
 				<path class="branding-st2" d="M224.4,106.7h-31.7c-1,0-1.9,0.7-2.2,1.7l-7.1,28.3c-0.4,1.4,0.7,2.8,2.2,2.8H219c1.6,0,2.7,1.5,2.3,3
 					l-1.7,6.9h-56.1c-1.6,0-2.7-1.5-2.3-3l20.2-80.9c1-4.1,4.8-7.1,9-7.1h46.8c1.6,0,2.7,1.5,2.3,3l-1.3,5c-0.3,1.1-1.2,1.8-2.3,1.8
 					h-33.7c-1,0-1.9,0.7-2.2,1.7l-6,24.2c-0.4,1.4,0.7,2.8,2.2,2.8h29.4c1.6,0,2.7,1.5,2.3,3l-1.2,4.9

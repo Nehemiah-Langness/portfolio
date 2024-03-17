@@ -1,0 +1,185 @@
+:root {
+    --branding-delay: 1s;
+    --branding-length: 3s;
+    --branding-length-half: calc(var(--branding-length) / 2);
+    --branding-length-quarter: calc(var(--branding-length) / 4);
+}
+
+#branding-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: calc(1.5rem * 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    animation: container-fade 4s ease-in-out forwards;
+    animation-delay: var(--branding-delay);
+    opacity: 1;
+    background: var(--bs-light);
+    height: 100vh;
+
+    .logo {
+        position: absolute;
+
+        animation: transition-logos var(--branding-length) ease-in-out forwards;
+        opacity: 0;
+        width: calc(75vw / 4);
+        transform: translate(calc(50vw - 50%), 0);
+    }
+}
+
+#branding {
+    // width: 12rem;
+    transform: translate(calc(50vw - 50%), 0);
+    width: 75vw;
+    //transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+
+    //animation: sizing 4s ease-in-out forwards;
+    //animation-delay: var(--branding-delay);
+}
+
+#ANGNESS-MASK,
+#EHEMIAH-MASK {
+    animation: clip var(--branding-length-quarter) ease-in-out forwards;
+    animation-delay: var(--branding-delay);
+}
+
+#NEHEMIAH {
+    transform: translate(5%, -40%);
+    animation: name-collapse var(--branding-length-half) ease-in-out forwards;
+    animation-delay: var(--branding-delay);
+}
+
+#FullName {
+    animation: center-logo var(--branding-length) ease-in-out forwards;
+    animation-delay: var(--branding-delay);
+}
+
+@keyframes transition-logos {
+    0% {
+        opacity: 0;
+        width: calc(75vw / 4);
+        transform: translate(calc(50vw - 50%), 0);
+    }
+
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+        width: calc(75vw / 4);
+        transform: translate(calc(50vw - 50%), 0);
+    }
+
+    100% {
+        opacity: 1;
+        width: 3rem;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes container-fade {
+    0% {
+        opacity: 1;
+        background: var(--bs-light);
+        height: 100vh;
+    }
+
+    50% {
+        opacity: 1;
+        background: var(--bs-light);
+        height: 100vh;
+
+    }
+
+    75% {
+        opacity: 1;
+        background: var(--bs-primary);
+    }
+
+    80% {
+        height: calc(3rem + 1rem + (2 * 0.3125rem));
+    }
+
+    100% {
+        opacity: 0;
+        background: var(--bs-primary);
+        height: calc(3rem + 1rem + (2 * 0.3125rem));
+    }
+}
+
+@keyframes sizing {
+    0% {
+        width: 75vw;
+        transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    }
+
+    50% {
+        width: 75vw;
+        transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    }
+
+    75% {
+        width: 12rem;
+        transform: translate(-25%, 0);
+    }
+
+    100% {
+        width: 12rem;
+        transform: translate(-25%, 0);
+    }
+}
+
+@keyframes center-logo {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(37.5%, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(37.5%, -25%);
+    }
+
+    52% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(37.5%, -25%);
+    }
+}
+
+@keyframes clip {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(0, 1);
+    }
+}
+
+@keyframes name-collapse {
+    0% {
+        transform: translate(5%, -40%)
+    }
+
+    50% {
+        transform: translate(5%, -40%)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
