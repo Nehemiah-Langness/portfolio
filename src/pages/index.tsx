@@ -1,31 +1,56 @@
-export function Index() {
-	return <div className="flex-grow-1 container pt-5">
+import GitHub from '../assets/github.svg?react';
+import { ApplicationCard } from '../components/application-card';
 
-		<span className="display-5">Web Apps</span>
+
+export default function Index() {
+	return (<>
+		<span className="display-5">Applications</span>
 		<div className="d-flex p-2 flex-wrap justify-content-center">
-			<div className="card mx-4 mb-4" style={{
-				width: '20rem'
-			}}>
-				<img style={{ background: 'var(--bs-primary)' }} src="https://contact.n-lang.dev/icon-192.svg" className="card-img-top" alt="Contact Card" />
-				<div className="card-body">
-					<h5 className="card-title">Contact Card</h5>
-					<p className="card-text">Build a digital contact card with sharing and vCard capabilities</p>
-					<a href="https://contact.n-lang.dev" target="_blank" className="btn btn-primary">Visit Application</a>
-				</div>
+			<ApplicationCard
+				imageUrl='https://contact.n-lang.dev/icon-192.svg'
+				siteUrl='https://contact.n-lang.dev'
+				title='Contact Card'
+				text='Build a digital contact card with sharing and vCard capabilities'
+				imageBackgroundColor='var(--bs-primary)'
+			/>
+
+			<ApplicationCard
+				imageUrl='https://notes.n-lang.dev/favicon.svg'
+				siteUrl='https://notes.n-lang.dev'
+				title='Notes'
+				text='Keep sticky notes of things you need to remember'
+				imageBackgroundColor='var(--bs-white)'
+			/>
+		</div>
+
+		<div className="mt-5"></div>
+		<span className="display-5">Source Code</span>
+		<div className="ps-3">
+			<div className="my-5">
+				<a href="https://github.com/Nehemiah-Langness?tab=repositories" target="_blank">
+					<div className="d-flex align-items-center">
+						<GitHub height="1.5rem" className='me-2' style={{ color: '#171515' }} /> All GitHub Repositories
+					</div>
+				</a>
 			</div>
 
-			<div className="card mx-4 mb-4" style={{
-				width: '20rem'
-			}}>
-				<img style={{ background: 'var(--bs-white)' }} src="https://nehemiah-langness.github.io/Notes/favicon.svg" className="card-img-top" alt="Notes" />
-				<div className="card-body">
-					<h5 className="card-title">Notes</h5>
-					<p className="card-text">Keep sticky notes of things you need to remember</p>
-					<a href="https://nehemiah-langness.github.io/Notes/" target="_blank" className="btn btn-primary">Visit Application</a>
-				</div>
+			<div className="my-5">
+				<a href="https://github.com/Nehemiah-Langness/contact-card" target="_blank">
+					<div className="d-flex align-items-center">
+						<GitHub height="1.5rem" className='me-2' style={{ color: '#171515' }} /> Contact Card
+					</div>
+				</a>
+			</div>
+
+			<div className="my-5">
+				<a href="https://github.com/Nehemiah-Langness/Notes" target="_blank">
+					<div className="d-flex align-items-center">
+						<GitHub height="1.5rem" className='me-2' style={{ color: '#171515' }} /> Notes
+					</div>
+				</a>
 			</div>
 		</div>
 
 
-	</div>;
+	</>);
 }

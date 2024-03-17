@@ -6,14 +6,20 @@ import {
 } from "react-router-dom";
 
 import { Layout } from "./pages/layout";
-import { Index } from "./pages";
+import Index from "./pages";
+import Education from "./pages/education";
 import { Loading } from "./components/loading";
-
+import Error from "./pages/error";
 
 const router = createBrowserRouter(
-	createRoutesFromElements(<Route path="/" element={<Layout />}>
-		<Route path='/' element={<Index />} />
-	</Route>)
+	createRoutesFromElements(
+
+		<Route path="/" errorElement={<Error />}>
+			<Route path="/" element={<Layout />}>
+				<Route path='/education' element={<Education />} />
+				<Route path='/' element={<Index />} />
+			</Route>
+		</Route>)
 );
 
 function App() {

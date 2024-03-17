@@ -17,7 +17,7 @@
     justify-content: center;
 
     
-    animation: container-fade 4s ease-in-out forwards;
+    animation: container-fade var(--branding-length) ease-in-out forwards;
     animation-delay: var(--branding-delay);
     opacity: 1;
     background: var(--bs-light);
@@ -34,13 +34,8 @@
 }
 
 #branding {
-    // width: 12rem;
     transform: translate(calc(50vw - 50%), 0);
     width: 75vw;
-    //transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-
-    //animation: sizing 4s ease-in-out forwards;
-    //animation-delay: var(--branding-delay);
 }
 
 #ANGNESS-MASK,
@@ -110,28 +105,6 @@
         opacity: 0;
         background: var(--bs-primary);
         height: calc(3rem + 1rem + (2 * 0.3125rem));
-    }
-}
-
-@keyframes sizing {
-    0% {
-        width: 75vw;
-        transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-    }
-
-    50% {
-        width: 75vw;
-        transform: translate(calc(50vw - 50%), calc(50vh - 50%));
-    }
-
-    75% {
-        width: 12rem;
-        transform: translate(-25%, 0);
-    }
-
-    100% {
-        width: 12rem;
-        transform: translate(-25%, 0);
     }
 }
 
