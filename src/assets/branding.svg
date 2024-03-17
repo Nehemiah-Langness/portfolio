@@ -4,18 +4,20 @@
 	 viewBox="0 -192 768 384" style="enable-background:new 0 -192 768 192;" xml:space="preserve">
 	<style type="text/css">
 		:root {
-			--branding-delay: 1s;
+			--branding-delay: 1;
 		}
 
 		.branding-st2{fill:#2272AF;}
 
 		#branding-container {
+			background: var(--bs-light);
 			animation: container-fade 4s ease-in-out forwards;
 			animation-delay: var(--branding-delay);
 		}
 
 		#branding {
-			width: 50rem;
+			width: 75vh;
+			transform: translate(calc(50vw - 50%), calc(50vh - 50%));
 			animation: sizing 4s ease-in-out forwards;
 			animation-delay: var(--branding-delay);
 		}
@@ -56,23 +58,23 @@
 
 		@keyframes sizing {
 			0% {
-				width: 50rem;
-				transform: translate(0, 0);
+				width: 75vh;
+			transform: translate(calc(50vw - 50%), calc(50vh - 50%));
 			}
 
 			50% {
-				width: 50rem;
-				transform: translate(0, 0);
+				width: 75vh;
+				transform: translate(calc(50vw - 50%), calc(50vh - 50%));
 			}
 
 			75% {
 				width: 12rem;
-				transform: translate(calc(-50vw + 6rem + (-.375 * 12rem) + 12px), calc(-50vh + 4rem + (-.375 * 4rem) + 8px));
+				transform: translate(-25%, 0);
 			}
 
 			100% {
 				width: 12rem;
-				transform: translate(calc(-50vw + 6rem + (-.375 * 12rem) + 12px), calc(-50vh + 4rem + (-.375 * 4rem) + 8px));
+				transform: translate(-25%, 0);
 			}
 		}
 

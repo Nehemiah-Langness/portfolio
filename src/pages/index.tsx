@@ -2,8 +2,8 @@ export function Index() {
 	return <div className="flex-grow-1 container pt-5">
 
 		<span className="display-5">Web Apps</span>
-		<div className="d-flex p-2">
-			<div className="card mx-4" style={{
+		<div className="d-flex p-2 flex-wrap justify-content-center">
+			<div className="card mx-4 mb-4" style={{
 				width: '20rem'
 			}}>
 				<img style={{ background: 'var(--bs-primary)' }} src="https://contact.n-lang.dev/icon-192.svg" className="card-img-top" alt="Contact Card" />
@@ -14,7 +14,7 @@ export function Index() {
 				</div>
 			</div>
 
-			<div className="card mx-4" style={{
+			<div className="card mx-4 mb-4" style={{
 				width: '20rem'
 			}}>
 				<img style={{ background: 'var(--bs-white)' }} src="https://nehemiah-langness.github.io/Notes/favicon.svg" className="card-img-top" alt="Notes" />
