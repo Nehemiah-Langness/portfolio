@@ -7,18 +7,18 @@ export default function Index() {
 		<span className="display-5">Applications</span>
 		<div className="d-flex p-2 flex-wrap justify-content-center">
 			<ApplicationCard
-				imageUrl='https://contact.n-lang.dev/icon-192.svg'
+				imageUrl='https://contact.n-lang.dev/favicon.svg'
 				siteUrl='https://contact.n-lang.dev'
 				title='Contact Card'
 				text='Build a digital contact card with sharing and vCard capabilities'
-				imageBackgroundColor='var(--bs-primary)'
+				imageBackgroundColor='var(--bs-white)'
 			/>
 
 			<ApplicationCard
 				imageUrl='https://notes.n-lang.dev/favicon.svg'
 				siteUrl='https://notes.n-lang.dev'
 				title='Notes'
-				text='Keep sticky notes of things you need to remember'
+				text='Keep notes of things you need to remember'
 				imageBackgroundColor='var(--bs-white)'
 			/>
 		</div>
