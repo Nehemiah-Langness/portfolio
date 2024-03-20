@@ -92,6 +92,11 @@ body {
         position: relative;
         border-color: var(--bs-secondary) !important;
         border-width: 4px !important;
+
+        .timeline-title {
+            font-size: 3rem;
+            line-height: 0.9;
+        }
     }
 }
 
@@ -107,10 +112,25 @@ body {
             padding-right: 0;
 
             img {
-                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .text-end {
+                text-align: start !important;
             }
         }
     }
+
+    .timeline-left,
+    .timeline-right {
+        .timeline-content {
+            .timeline-title {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+
 }
 
 .timeline-left {

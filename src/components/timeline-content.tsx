@@ -4,7 +4,7 @@ export function TimelineContent({
 	return (
 		<div {...props} className={`d-flex ${props.className ?? ''}`}>
 			<div className='timeline-content border rounded-2 p-4 flex-grow-1 shadow-sm'>
-				<div className='me-5 py-2' style={{ fontSize: '3rem', lineHeight: 0.9 }}>
+				<div className='timeline-title me-5 py-2'>
 					{year}
 				</div>
 				<div className='pt-2'>

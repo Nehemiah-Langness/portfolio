@@ -13,13 +13,13 @@ export default function Experience() {
                         title='Attended College'
                         logo={
                             <a href='https://cune.edu/' target='_blank' rel="noreferrer">
-                                <img src='https://cune.edu/application/themes/icarus/images/logo_full_color.svg' style={{ height: '3rem' }} />
+                                <img src='https://cune.edu/application/themes/icarus/images/logo_full_color.svg' style={{ width: '15rem' }} />
                             </a>
                         }
                     >
                         <dl className='row mb-0'>
-                            <dt className='col-6'>Degrees</dt>
-                            <dl className='col-6 text-end mb-0'>
+                            <dt className='col-12 col-lg-6 '>Degrees</dt>
+                            <dl className='col-12 col-lg-6 text-end mb-0'>
                                 Theology - <span className='fst-italic'>B.A.</span>
                                 <br />
                                 Computer Science - <span className='fst-italic'>B.A.</span>
@@ -31,18 +31,18 @@ export default function Experience() {
             <TimelineBlock
                 contentRight={
                     <TimelineContent
-                        year='2012-2015'
+                        year='2012 - 2015'
                         style={{ '--org-color': '#172b54' } as CSSProperties}
                         title='Work Experience'
                         logo={
                             <a href='https://cune.edu/' target='_blank' rel="noreferrer">
-                                <img src='https://cune.edu/application/themes/icarus/images/logo_full_color.svg' style={{ height: '3rem' }} />
+                                <img src='https://cune.edu/application/themes/icarus/images/logo_full_color.svg' style={{ width: '15rem' }} />
                             </a>
                         }
                     >
                         <dl className='row mb-0'>
-                            <dt className='col-6'>Student Worker</dt>
-                            <dl className='col-6 text-end mb-0'>2012-2015</dl>
+                            <dt className='col-12 col-lg-6 '>Student Worker</dt>
+                            <dl className='col-12 col-lg-6  text-end mb-0'>2012-2015</dl>
                         </dl>
                     </TimelineContent>
                 }
@@ -50,7 +50,7 @@ export default function Experience() {
             <TimelineBlock
                 contentLeft={
                     <TimelineContent
-                        year='2013-2020'
+                        year='2013 - 2020'
                         style={{ '--org-color': '#0e3152' } as CSSProperties}
                         title='Work Experience'
                         logo={
@@ -60,12 +60,12 @@ export default function Experience() {
                         }
                     >
                         <dl className='row mb-0'>
-                            <dt className='col-6'>Internship</dt>
-                            <dl className='col-6 text-end '>2013-2016</dl>
-                            <dt className='col-6'>Software Developer</dt>
-                            <dl className='col-6 text-end '>2016-2019</dl>
-                            <dt className='col-6'>Senior Software Developer</dt>
-                            <dl className='col-6 text-end '>2019-2020</dl>
+                            <dt className='col-12 col-lg-6 '>Internship</dt>
+                            <dl className='col-12 col-lg-6  text-end '>2013-2016</dl>
+                            <dt className='col-12 col-lg-6 '>Software Developer</dt>
+                            <dl className='col-12 col-lg-6  text-end '>2016-2019</dl>
+                            <dt className='col-12 col-lg-6 '>Senior Software Developer</dt>
+                            <dl className='col-12 col-lg-6  text-end '>2019-2020</dl>
                         </dl>
                     </TimelineContent>
                 }
@@ -73,7 +73,7 @@ export default function Experience() {
             <TimelineBlock
                 contentRight={
                     <TimelineContent
-                        year='2020-Current'
+                        year='2020 - Now'
                         style={{ '--org-color': '#005696' } as CSSProperties}
                         title='Work Experience'
                         logo={
@@ -85,10 +85,10 @@ export default function Experience() {
                         }
                     >
                         <dl className='row mb-0'>
-                            <dt className='col-6'>Senior Software Developer</dt>
-                            <dl className='col-6 text-end '>2020-2022</dl>
-                            <dt className='col-6'>Senior Software Technical Lead</dt>
-                            <dl className='col-6 text-end '>2022-Current</dl>
+                            <dt className='col-12 col-lg-6 '>Senior Software Developer</dt>
+                            <dl className='col-12 col-lg-6  text-end '>2020-2022</dl>
+                            <dt className='col-12 col-lg-6 '>Senior Software Technical Lead</dt>
+                            <dl className='col-12 col-lg-6  text-end '>2022-Current</dl>
                         </dl>
                     </TimelineContent>
                 }
