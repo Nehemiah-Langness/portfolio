@@ -1,8 +1,9 @@
+$secondary: #abbac9;
 $primary: #2272af;
-$secondary: #B05F21;
+$danger: #B05F21;
 $info: #21B0A2;
 $dark: #232C33;
-$tertiary: #B08821;
+$warning: #B08821;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -10,19 +11,18 @@ $tertiary: #B08821;
     --bs-body-color: var(--bs-dark);
 }
 
-// .card {
-//     --bs-card-title-color: var(--bs-primary);
-// }
-
 .card-text {
     font-size: 10pt;
+}
+
+.container {
+    background: var(--bs-white);
 }
 
 html,
 body,
 #root {
     height: 100%;
-
 }
 
 hr {
@@ -36,7 +36,7 @@ a {
 }
 
 body {
-    background: var(--bs-light);
+    background: url('/bg.png') var(--bs-light);
 
     &::-webkit-scrollbar {
         background-color: var(--bs-light);
@@ -76,4 +76,52 @@ body {
 .logo {
     background: var(--bs-light);
     border-radius: 25%;
+}
+
+.timeline-left,
+.timeline-right {
+
+    padding-bottom: 2rem;
+
+    .timeline-content {
+        position: relative;
+        border-color: var(--bs-secondary) !important;
+        border-width: 4px !important;
+    }
+}
+
+.timeline-left {
+
+    .timeline-content::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 0.5rem;
+        width: 0;
+        left: 100%;
+        border-style: solid;
+        border-width: 20px 0 0 40px;
+        border-color: transparent transparent transparent var(--bs-secondary);
+    }
+}
+
+.timeline-right {
+    .timeline-content::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 0.5rem;
+        width: 0;
+        right: 100%;
+        border-style: solid;
+        border-width:  0 0 20px 40px;
+        border-color: transparent transparent var(--bs-secondary) transparent ;
+    }
+}
+
+.card {
+    transition: transform .2s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
