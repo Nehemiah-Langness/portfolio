@@ -33,8 +33,36 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <div className='bg-secondary'>
-                <div className='container bg-secondary py-5'>
+
+            <div className='bg-secondary-subtle'>
+                <div className='container py-5 bg-secondary-subtle'>
+                    <div className='text-center pb-5 '>
+                        <span className='display-5'>Real-World Projects</span>
+                        <span className='d-block h4 mb-0 fw-light'>These are projects I've built with a team</span>
+                    </div>
+                    <RealWorldProject title='LCMS Locator' href='https://locator.lcms.org/dashboard' src='/site-locator.png' alt='Locator'>
+                        Find LCMS churches and schools using keyword searches, geographic searches, or by services offered.
+                    </RealWorldProject>
+                </div>
+            </div>
+            <div className='bg-white'>
+                <div className='container py-5'>
+                    <RealWorldProject title='Making Disciples for Life' href='https://mdfl.lcms.org/' src='/site-mdfl.png' alt='MDFL' altLayout>
+                        Resource repository for congregations and church workers. Allows users to locate resources by topic and request additional resources be create or
+                        distributed.
+                    </RealWorldProject>
+                </div>
+            </div>
+            <div className='bg-secondary-subtle'>
+                <div className='container py-5 bg-secondary-subtle'>
+                    <RealWorldProject title='LCMS Document Library' href='https://files.lcms.org/dashboard' src='/site-files.png' alt='Locator'>
+                        Online document repository for the LCMS. Administrators can upload files and categorize into folders and topics. Users can locate files by folder, file
+                        name, file type, or topic.
+                    </RealWorldProject>
+                </div>
+            </div>
+            <div className='bg-white'>
+                <div className='container py-5'>
                     <div className='text-center pb-5'>
                         <span className='display-5'>Personal Projects</span>
                         <span className='d-block h4 mb-0 fw-light'>These are projects I've built solo in my spare time</span>
@@ -45,61 +73,51 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <div className='bg-white'>
-                <div className='container py-5'>
-                    <div className='text-center pb-5'>
-                        <span className='display-5'>Real-World Projects</span>
-                        <span className='d-block h4 mb-0 fw-light'>These are projects I've built with a team</span>
-                    </div>
-                    <RealWorldProject title='LCMS Locator' href='https://locator.lcms.org/dashboard' src='/site-locator.png' alt='Locator'>
-                        Find LCMS churches and schools using keyword searches, geographic searches, or by services offered.
-                    </RealWorldProject>
-                </div>
-            </div>
-            <div className='bg-secondary'>
-                <div className='container py-5 bg-secondary'>
-                    <RealWorldProject title='Making Disciples for Life' href='https://mdfl.lcms.org/' src='/site-mdfl.png' alt='MDFL' altLayout>
-                        Resource repository for congregations and church workers. Allows users to locate resources by topic and request additional resources be create or
-                        distributed.
-                    </RealWorldProject>
-                </div>
-            </div>
-            <div className='bg-white'>
-                <div className='container py-5'>
-                    <RealWorldProject title='LCMS Document Library' href='https://files.lcms.org/dashboard' src='/site-files.png' alt='Locator'>
-                        Online document repository for the LCMS. Administrators can upload files and categorize into folders and topics. Users can locate files by folder, file
-                        name, file type, or topic.
-                    </RealWorldProject>
-                </div>
-            </div>
-            <div className='bg-secondary'>
-                <div className='container py-5 bg-secondary'>
+            <div className='bg-secondary-subtle'>
+                <div className='container py-5 bg-secondary-subtle'>
                     <div className='text-center pb-5'>
                         <span className='display-5'>Work Experience and Education</span>
                         <span className='d-block h4 mb-0 fw-light'>B.A. in Computer Science and {new Date().getFullYear() - 2013} Year's Experience</span>
                     </div>
                     <div className='d-flex justify-content-center py-4'>
-                        <Link to='/experience' className='d-block w-50'>
-                            <div className='position-relative '>
+                        <Link to='/experience' className='d-block w-75 mb-5'>
+                        <div className='pb-5 text-center fs-16'>View my full work experience and education timeline</div>
+                            <div className='position-relative mb-4'>
                                 <div className=' border border-2 border-dark position-absolute start-0 end-0'></div>
                                 <div
                                     style={{ marginTop: 1 }}
-                                    className='p-2 bg-secondary border border-4 border-dark position-absolute top-0 start-0 translate-middle rounded-circle'
+                                    className='p-2 bg-secondary-subtle border border-4 border-dark position-absolute top-0 start-0 translate-middle rounded-circle'
+                                ></div>
+                                <div
+                                    style={{
+                                        marginTop: 1,
+                                        left: (((2019 - 2012) / (2022 - 2012)) * 100).toString() + '%',
+                                    }}
+                                    className='p-2 bg-secondary-subtle border border-4 border-dark position-absolute top-0 translate-middle rounded-circle'
                                 ></div>
                                 <div
                                     style={{ marginTop: 1 }}
-                                    className='p-2 bg-secondary border border-4 border-dark position-absolute top-0 start-50 translate-middle rounded-circle'
-                                ></div>
-                                <div
-                                    style={{ marginTop: 1 }}
-                                    className='p-2 bg-secondary border border-4 border-dark position-absolute top-0 start-100 translate-middle rounded-circle'
+                                    className='p-2 bg-secondary-subtle border border-4 border-dark position-absolute top-0 start-100 translate-middle rounded-circle'
                                 ></div>
 
                                 <div className='position-absolute bottom-100 start-0 translate-middle text-dark'>2012</div>
-                                <div className='position-absolute bottom-100 start-50 translate-middle text-dark'>{2012 + Math.floor((new Date().getFullYear() - 2012) / 2)}</div>
-                                <div className='position-absolute bottom-100 start-100 translate-middle text-dark'>{new Date().getFullYear()}</div>
+                                <div className='position-absolute bottom-100 translate-middle text-dark' style={{ left: (((2019 - 2012) / (2022 - 2012)) * 100).toString() + '%' }}>
+                                    2019
+                                </div>
+                                <div className='position-absolute bottom-100 start-100 translate-middle text-dark'>2022</div>
+                                <div className='position-absolute top-100 start-0 translate-middle text-dark mt-4' style={{ bottom: 0 }}>
+                                    Student Worker
+                                </div>
+                                <div
+                                    className='position-absolute top-100 translate-middle text-dark mt-4'
+                                    style={{ left: (((2019 - 2012) / (2022 - 2012)) * 100).toString() + '%', bottom: 0 }}
+                                >
+                                    Senior Software Developer
+                                </div>
+                                <div className='position-absolute top-100 start-100 translate-middle text-dark mt-4' style={{ bottom: 0 }}>
+                                    Senior Software Technical Lead
+                                </div>
                             </div>
-                            <div className='mt-4 text-center fs-16'>View my full work experience and education timeline</div>
                         </Link>
                     </div>
                 </div>
