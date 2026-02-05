@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import FullStack from '../assets/full-stack.svg?react';
 import GitHub from '../assets/github.svg?react';
 import LinkedIn from '../assets/linked-in.svg?react';
+import { HappyHealthyHousewivesApplicationCard } from '../components/application-cards/hhhw-application-card';
 
 export default function Profile() {
     return (
@@ -68,6 +69,7 @@ export default function Profile() {
                         <span className='d-block h4 mb-0 fw-light'>These are projects I've built solo in my spare time</span>
                     </div>
                     <div className='d-flex justify-content-center flex-wrap'>
+                        <HappyHealthyHousewivesApplicationCard />
                         <ContactCardApplicationCard />
                         <NotesApplicationCard />
                     </div>
@@ -81,7 +83,7 @@ export default function Profile() {
                     </div>
                     <div className='d-flex justify-content-center py-4'>
                         <Link to='/experience' className='d-block w-75 mb-5'>
-                        <div className='pb-5 text-center fs-16'>View my full work experience and education timeline</div>
+                            <div className='pb-5 text-center fs-16'>View my full work experience and education timeline</div>
                             <div className='position-relative mb-4'>
                                 <div className=' border border-2 border-dark position-absolute start-0 end-0'></div>
                                 <div

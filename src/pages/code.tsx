@@ -1,5 +1,6 @@
 import GitHub from '../assets/github.svg?react';
 import { ContactCardApplicationCard } from '../components/application-cards/contact-card-application-card';
+import { HappyHealthyHousewivesApplicationCard } from '../components/application-cards/hhhw-application-card';
 import { NotesApplicationCard } from '../components/application-cards/notes-application-card';
 
 export default function Code() {
@@ -13,6 +14,7 @@ export default function Code() {
                     marginRight: 'calc(var(--bs-gutter-x) * -0.5)',
                 }}
             >
+                <HappyHealthyHousewivesApplicationCard />
                 <ContactCardApplicationCard />
                 <NotesApplicationCard />
             </div>

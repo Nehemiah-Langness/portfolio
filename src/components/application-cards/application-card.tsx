@@ -6,11 +6,12 @@ interface ApplicationCardProps {
     siteUrl: string;
     title: string;
     text: string;
+    objectFit?: CSSProperties['objectFit'];
 }
 
-export function ApplicationCard({ imageUrl, siteUrl, text, title, imageBackgroundColor }: ApplicationCardProps) {
+export function ApplicationCard({ imageUrl, siteUrl, text, title, imageBackgroundColor, objectFit }: ApplicationCardProps) {
     return (
-        <a href={siteUrl} target='_blank' rel="noreferrer" className='d-flex'>
+        <a href={siteUrl} target='_blank' rel='noreferrer' className='d-flex'>
             <div
                 className='card mx-4 my-4'
                 style={
@@ -20,7 +21,7 @@ export function ApplicationCard({ imageUrl, siteUrl, text, title, imageBackgroun
                     } as CSSProperties
                 }
             >
-                <img style={{ background: imageBackgroundColor, height: '10rem' }} src={imageUrl} className='card-img-top' alt={title} />
+                <img style={{ background: imageBackgroundColor, height: '10rem', objectFit: objectFit }} src={imageUrl} className='card-img-top' alt={title} />
                 <div className='card-body'>
                     <h5 className='card-title'>{title}</h5>
                     <p className='card-text'>{text}</p>
